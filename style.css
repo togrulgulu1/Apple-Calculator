@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(apple-iphone-15-pro-max-2023-medium.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.calculator .head p,
+i {
+    color: #fff;
+    font-size: 10px;
+}
+
+.calculator .head .headRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.calculator {
+    position: relative;
+    width: 280px;
+    height: 607px;
+    padding: 5px;
+    user-select: none;
+    border-radius: 37px;
+    background: #000000;
+}
+
+
+.calculator .buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.calculator .buttons #numberArea {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    color: #eee;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: 65px;
+    font-weight: 100;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.calculator .buttons button {
+    position: relative;
+    user-select: none;
+    width: 57px;
+    height: 57px;
+    color: #eee;
+    background-color: #333333;
+    box-shadow: -1px -1px 3px rgb(185, 185, 185),
+        2px 2px 6px rgba(41, 41, 41, 0.8);
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.calculator .buttons button:active {
+    box-shadow: -1px -1px 3px rgb(114, 114, 114),
+        2px 2px 6px rgba(27, 27, 27, 0.8),
+        inset -5px -5px 10px rgb(114, 114, 114, 0.8),
+        inset 5px 5px 10px rgba(27, 27, 27, 0.5);
+}
+
+.calculator .buttons button#zero {
+    flex-grow: 3;
+    border-radius: 50px;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.calculator .buttons button#division,
+.calculator .buttons button#times,
+.calculator .buttons button#minus,
+.calculator .buttons button#plus,
+.calculator .buttons button#equal {
+    background-color: #ff9f0a;
+}
+
+.calculator .buttons button#clear,
+.calculator .buttons button#plusMinus,
+.calculator .buttons button#modul {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.calculator .buttons button#plus:active,
+.calculator .buttons button#equal:active,
+.calculator .buttons button#division:active,
+.calculator .buttons button#times:active,
+.calculator .buttons button#minus:active {
+    background-color: #a5a5a5;
+}
+
+.line {
+    width: 90px;
+    height: 4px;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
